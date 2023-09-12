@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.home.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#26292D">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/greeting_bar"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:background="@drawable/greeting_bar">
+
+            <TextView
+                android:id="@+id/greeting1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/greeting"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/avatar"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/greeting2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/greeting2"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/greeting1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txtRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/recommendations"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendationList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/recentListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/recent_listen"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentListenList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/txtTopAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/top_album"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topAlbumList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="100dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
